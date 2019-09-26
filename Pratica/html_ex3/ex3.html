@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Form</title>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <form action= "save.php" method="get">
+            <label>Nome:
+                <input type="text" name= "Nome" >
+            </label> 
+            <br><br>
+            <label for= "id_idade">Idade:</label> <br>
+            <input id="id_idade" type= "radio" name= "idade" value= "<18">Menor que 18 <br>
+            <input type= "radio" name= "idade" value= "19-35">19-35 <br>
+            <input type= "radio" name= "idade" value= "36-48">36-48 <br>
+            <input type= "radio" name= "idade" value= ">49">>49 <br>
+            <br>
+            <label for= "id_profissao">Profession:</label>
+            <input id="id_profissao" type= "text" name= "profissao"><br>
+            <br>
+            <label for= "id_country">Country:</label>
+            <select id="id_country" name= "Country">
+                <option value= "portugal">Portugal</option>
+                <option value= "reino_unido">Reino Unido</option>
+                <option value= "franca">França</option>
+            </select><br>
+            <br>
+            <label for= "id_interesses">Interests:</label> <br>
+            <input id="id_interesses" name= "interesses" type="checkbox" value= "fishing"> Fishing <br>
+            <input type= "checkbox" name= "interesses" value= "ciclying"> Ciclying <br>
+            <input type= "checkbox" name= "interesses" value= "playing_video_games"> Playing video games <br>
+            <br>
+            <label for= "id_how">How did the user found this site</label><br>
+            <textarea id= "id_how" name= "how" rows= "4" cols= "50" required="required"></textarea><br>
+            
+            <input type="submit" value="Send">
+
+        </form>
+
+
+    </body>
+</html>
