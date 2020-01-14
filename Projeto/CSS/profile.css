@@ -1,0 +1,459 @@
+/*Header*/
+body > header{
+    text-align: center;
+    color: white;  
+    margin-bottom: 2em;
+    border-bottom: 2px solid white;     
+}
+
+body > header a{
+    padding: 1rem;
+    position: relative;
+    top: 35px;  
+    text-decoration: none;
+    color: white;
+    background: #b3dfde;
+        
+}
+
+/*Menu*/
+
+#menu input{
+    display: none;
+}
+
+#menu .hamburger {
+    display: block;
+    color: white;
+    padding: 1em;
+    position: relative;
+    margin-left: 92%;
+     
+}
+
+#menu .hamburger:before {
+    content:'\2630';
+}
+
+#menu ul {
+    flex-direction: column;
+    margin: 0 auto 0 500px;
+    padding: 0;
+    color: white;
+  }
+
+#hamburger:checked + .hamburger + ul li{
+    max-height: 5em;
+    float: right;
+    display: flex;
+    width: 11em;
+}
+
+#hamburger:checked + .hamburger:before {
+    content:'\2715';
+}  
+
+#menu li {
+    max-height: 0;
+    padding: 1em 2em;
+    background-color: #2a2f33;
+    display: none;
+}
+
+#menu li:nth-child(1) {
+    border-left: 2px solid white;
+    border-right: 2px solid white;  
+    border-top: 2px solid white;
+}
+
+#menu li:nth-child(2) {
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    border-top: 2px solid white;
+}
+
+#menu li:nth-child(3) {
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    border-top: 2px solid white;
+}
+
+#menu li:nth-child(4) {
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+}
+
+/*Body*/
+
+body {
+    max-width: 750px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0 auto;
+    left: 25%;
+    margin-right: -50%;
+    background-color: #b3dfde;
+    color: white;
+    font-family: Franklin Gothic;
+}
+
+
+
+/*Section*/
+
+#MyProfile img[src$=".jpg"] { 
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background:#b3dfde;
+    position: relative;
+    bottom: 50px;
+    left: 60px;
+    border-color: white;
+    
+}
+
+#MyProfile h1 {
+    position: absolute;
+    padding: 1rem;
+    top:118px;
+    left: 250px;  
+    color: white;
+    background: #b3dfde;
+  
+}
+
+#MyProfile h2{
+    margin-bottom: 1.4em;
+    margin-top: 1.5em;
+    border-bottom: 2px solid white;  
+}
+
+
+#MyProfile h2 a{
+   background: #b3dfde;
+   position: absolute;
+   top:373px;
+   left: 50px;
+   padding: 0em 0.5em;
+}
+
+#MyProfile {
+    border-top: 2px solid white; 
+}
+
+#MyProfile h3 a{
+  
+    text-decoration: none;
+    color: white;
+}
+
+#MyProfile .mail{
+    position: absolute;
+    top:277px;
+    left: 70px;  
+}
+
+#MyProfile .card { 
+    position: absolute;
+    top:440px;
+    left: 60px;  
+}
+
+#MyProfile img + img{
+    width: 5px;
+    height: 5px;
+}
+
+#MyProfile h3 a[href^="#changecard"]{
+    position: absolute;
+    top:473px;
+    left: 65px; 
+}
+
+#MyProfile h3 a[href^="#changemail"]{
+    position: absolute;
+    top: 255px;   
+}
+
+#MyProfile h3 a[href^="#changepro"]{
+    position: absolute;
+    top: 255px;
+    left: 135px;
+    
+}
+
+#MyBookings{
+    border-top: 2px solid white; 
+    padding: 2em;
+}
+
+#MyBookings h2 a{
+    background: #b3dfde;
+    position: absolute;
+    top: 515px;
+    left: 50px;
+    padding: 0em 0.5em;
+    
+}
+
+
+#MyBookings h3{
+    margin-left: 4em;
+}
+
+
+#MyBookings h3 a{
+    text-decoration: none;
+    color: white;
+}
+
+#MyBookings h3 a[href^="../PHP/cancellation_booking.php?"]{
+    color: #ff4040;
+}
+
+#MyBookings img[src$="cross.png"] { 
+    position: relative;
+    bottom: 46px; 
+    left: 30px;
+    width: 35px;
+    height: 35px;     
+}
+
+#MyProperties{
+    border-top: 2px solid white; 
+    padding: 2em;
+}
+
+#MyProperties h2{
+    background: #b3dfde;
+    color: white;
+     
+}
+
+#MyProperties h3{
+    margin-left: 4em;
+}
+
+#MyProperties h3 a{
+    text-decoration: none;
+    color: white;
+}
+
+#MyProperties img[src$="+.PNG"] { 
+    position: relative;
+    bottom: 52px; 
+    left: 7px;  
+    width: 58px;
+    height: 55px;  
+   
+}
+
+#MyProperties img[src$="lapis.PNG"] { 
+    position: relative;
+    bottom: 55px; 
+    left: 10px;
+    width: 50px;
+    height: 50px;   
+ 
+}
+
+
+/* modals */
+
+.modal {
+    position: fixed;
+    right: 0;
+    bottom: 160px;
+    left: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+  }
+
+  .modalmail {
+    position: fixed;
+    right: 0;
+    bottom: 270px;
+    left: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+  }
+
+  .modalcard {
+    position: fixed;
+    right: 0;
+    bottom: 50px;
+    left: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+  }
+
+  .modalpic {
+    position: fixed;
+    right: 0;
+    bottom: 270px;
+    left: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+  }
+
+  .modalproperty {
+    position: fixed;
+    right: 0;
+    bottom: 0px;
+    left: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+  }
+
+  .modal:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .modalmail:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .modalcard:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .modalpic:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .modalproperty:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+ div#changepass {
+    width: 400px;
+    margin: 10% auto;
+    padding: 15px 20px;
+    color: white;
+ }
+
+ div#changemail {
+    width: 400px;
+    margin: 10% auto;
+    padding: 15px 20px;
+    color: white;
+  }
+
+  div#changecard {
+    width: 400px;
+    margin: 10% auto;
+    padding: 15px 20px;
+    color: white;
+  }
+
+  div#changeprofilepic {
+    width: 400px;
+    margin: 10% auto;
+    padding: 15px 20px;
+    color: white;
+  }
+
+  [id^=changeproperty] {
+    width: 400px;
+   margin: 10% auto;
+   padding: 15px 20px;
+   color: white;
+}
+
+  div#addproperty{
+    width: 400px;
+    margin: 10% auto;
+    padding: 15px 20px;
+    color: white;
+  }
+    
+  #MyProfile .close{
+    position: absolute;
+    width: 30px;
+    right: -15px;
+    top: -20px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 5px;
+    background: white;
+    border-radius: 50%;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+  }
+
+  #MyProperties .close{
+    position: absolute;
+    width: 30px;
+    right: -15px;
+    top: -20px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 5px;
+    background: white;
+    border-radius: 50%;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+  }
+
+ /*Paragrafo de PasswordMatch*/
+#match{
+    display: none;
+    color: red;
+}
+
+#checked{
+    display: none;
+    color: red;
+}
+
+#message{
+    display: none;
+    color: red;
+    
+}

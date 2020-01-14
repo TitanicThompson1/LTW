@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Travel Crib - Register</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../CSS/register.css">
+        <script src="../JS/register.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Travel Crib</h1>
+            <h2>Start your journey</h2>
+        </header>
+        
+        <section>
+            <form id="idForm" method="POST" action="../actions/action_register.php  ">
+                <label for="fstName" >First Name</label>
+                    <input id="fstName" type="text" name="firstName" autocomplete="off" required>
+                
+                <br><br>
+
+                <label for= "lstName">Last Name</label>
+                    <input id="lstName" type="text" name="lastName" autocomplete="off" required>
+                
+                <br><br>
+
+                <label for="idEmail">Email</label>
+                    <input id="idEmail" type="email" name="email" autocomplete="off" required>
+                <p id="checked">Email already registered!</p>
+                <p id="over">Email can't have more then 30 characters</p>
+
+                <br><br>
+
+                <label for="idPassword">Password</label>
+                    <input id="idPassword" type="password" name="password" autocomplete="off" required>
+                
+
+                <br><br>
+
+                <label for="idPasswordR">Repeat Password</label>
+                    <input id="idPasswordR" type="password" name="Rpassword" autocomplete="off" required>
+                <p id="match">As palavras-passe devem ser identicas!</p>
+
+                <br><br>    
+
+                <input id="idSubmit" type="submit" value="Register">
+                    
+                <p>Already signed? <a href="/html/index.php">Sign in!</a></p>
+            </form>
+        </section>
+    </body>
+</html>
